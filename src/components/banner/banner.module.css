@@ -1,0 +1,6 @@
+.img {
+    border-radius: var(--border-radius);
+    object-fit: fill;
+    height: fit-content;
+    inline-size: 100%;
+}

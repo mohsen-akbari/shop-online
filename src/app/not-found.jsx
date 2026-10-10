@@ -1,0 +1,19 @@
+import Image from "next/image";
+
+import notFoundImage from "@/assets/illustrations/not-found.svg";
+
+import styles from "./not-found.module.css";
+
+export default function NotFound  () {
+  return (
+    <div className={styles["not-found"]}>
+      <div className={styles.writings}>
+        <div className={styles["status-code"]}>404</div>
+        <h1>صفحه‌ی مورد نظر پیدا نشد!</h1>
+      </div>
+      <div className={styles.visuals}>
+        <Image src={notFoundImage} alt="" width={500} height={600} />
+      </div>
+    </div>
+  );
+}

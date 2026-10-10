@@ -1,0 +1,41 @@
+.not-found {
+  display: grid;
+  grid-template-areas:  "visuals visuals" "writings writings";
+  place-content: center;
+  gap: 1rem;
+
+  min-block-size: 100%;
+  /* block-size: 100vh; */
+  inline-size: 100%;
+
+  .writings {
+    grid-area: writings;
+    text-align: center;
+
+    .status-code {
+      font-size: var(--fz-800);
+      font-weight: 300;
+      line-height: 0.8;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      margin-block-end: 1rem;
+
+      font-size: var(--fz-600);
+    }
+
+    p {
+      max-inline-size: 50ch;
+    }
+  }
+
+  .visuals {
+    grid-area: visuals;
+    min-block-size: 100%;
+
+    img {
+      block-size: 100%;
+    }
+  }
+}

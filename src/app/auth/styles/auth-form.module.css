@@ -1,0 +1,81 @@
+.auth-form {
+  inline-size: min(50rem, 100%);
+
+  .card-content {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    gap: 1rem;
+
+    .writings {
+      display: grid;
+      gap: 1rem;
+
+      h1 {
+        text-align: center;
+      }
+
+      form {
+        display: grid;
+        gap: 2rem;
+
+        .writings-input {
+          input {
+            padding: 0.7rem 0;
+          }
+
+          label {
+            span {
+              margin-block-end: 0.2rem;
+              font-size: var(--fz-400);
+            }
+          }
+        }
+
+        .error {
+          margin-block-start: 0.2rem;
+          display: flex;
+          align-items: center;
+          gap: 0.2rem;
+          color: var(--color-danger);
+          font-size: var(--fz-300);
+          height: 1.2rem;
+        }
+
+        > button {
+          height: 2.8rem;
+          background: linear-gradient(135deg, #4f46e5, #7c3aed);
+
+          > div {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+          }
+        }
+      }
+
+      .change-form {
+        a {
+          color: var(--color-primary);
+
+          color: #7c3aed;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .visuals {
+      min-block-size: 100%;
+      block-size: 0;
+      inline-size: 100%;
+
+      img {
+        block-size: 100%;
+        inline-size: 100%;
+        object-fit: cover;
+
+        border-radius: var(--border-radius);
+      }
+    }
+  }
+}
