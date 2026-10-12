@@ -2,7 +2,9 @@ import { toast } from "react-toastify";
 
 export async function fetchWithToast(input, init = {}, successMessage) {
   const response = await fetch(input, {
-    headers: { "content-type": "application/json" },
+    headers: {
+      "content-type": "application/json",
+    },
     ...init,
   });
 
@@ -12,7 +14,8 @@ export async function fetchWithToast(input, init = {}, successMessage) {
     let message = "خطای غیر منتظره رخ داد.";
 
     if ("error" in result) {
-      message = result.error;
+      // message = result.error;
+      message = "ارتباط با سرور قطع هست";
     }
 
     toast.error(message);
@@ -23,7 +26,7 @@ export async function fetchWithToast(input, init = {}, successMessage) {
     toast.success(successMessage);
   }
 
-  return { data: result.data };
+  return { data: result?.data };
 }
 
 export async function fetchWithoutToast(input, init = {}) {

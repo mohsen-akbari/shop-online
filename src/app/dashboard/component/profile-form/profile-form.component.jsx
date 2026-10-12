@@ -3,7 +3,8 @@
 import React, { useEffect, useState } from "react";
 
 import { ColorRing } from "react-loader-spinner";
-import { toast } from "react-toastify";
+
+// import { toast } from "react-toastify";
 
 import { ButtonComponent } from "@/components/button/button.component";
 import CardComponent from "@/components/card/card.component";
@@ -205,7 +206,11 @@ export default function ProfileFormComponent() {
   }
 
   if (status === "error") {
-    return <h1>متاسفانه مشکلی پیش امده است!</h1>;
+    return (
+      <h2 style={{ width: "632px", height: "382px" }}>
+        متاسفانه مشکلی پیش امده است!
+      </h2>
+    );
   }
 
   return (

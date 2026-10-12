@@ -15,7 +15,6 @@ export default function ProductsProvider({ children }) {
   const { filters } = useContext(FiltersContext);
 
   const [products, setProducts] = useState([]);
-  // const [loading, setLoading] = useState();
   const [error, setError] = useState();
   const { push } = useRouter();
 
@@ -47,11 +46,9 @@ export default function ProductsProvider({ children }) {
         throw new Error("ارتباط با سرور دچار مشکل شده است");
       }
       let result = await res.json();
-      // setLoading(false);
       setProducts(result);
     } catch (error) {
       setError(error.message);
-      setLoading(false);
     }
   };
 
