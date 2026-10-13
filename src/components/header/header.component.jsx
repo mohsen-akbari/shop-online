@@ -68,7 +68,7 @@ export default function HeaderComponent() {
     closeSingOutModal();
 
     router.replace("/auth/sign-in");
-  
+    router.refresh();
   };
 
   return (
@@ -144,9 +144,7 @@ export default function HeaderComponent() {
               <MingcuteExitLine width="1.5rem" height="1.5rem" />
             </div>
 
-            <h3>
-              خروج از حساب کاربری
-            </h3>
+            <h3>خروج از حساب کاربری</h3>
 
             <p>آیا مطمئن هستید که می‌خواهید را از حساب کاربری خارج شوید ؟</p>
 
