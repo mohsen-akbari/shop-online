@@ -270,7 +270,7 @@ export default function CartShopComponent() {
             onClick={(event) => event.stopPropagation()}
           >
             <div className={styles.modalIcon}>
-              <MingcuteDelete2Line width="32" height="32" />
+              <MingcuteDelete2Line width="25" height="25" />
             </div>
 
             <h3>

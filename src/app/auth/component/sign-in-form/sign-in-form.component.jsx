@@ -90,7 +90,6 @@ export default function SignInFormComponent() {
   const formSubmitHandler = async (e) => {
     setLoading(true);
     e.preventDefault();
-    validateForm();
     const formData = new FormData(e.currentTarget);
 
     const dto = {

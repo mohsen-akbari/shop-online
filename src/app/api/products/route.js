@@ -156,17 +156,17 @@ import prisma from "@/lib/prisma";
 import { extractUserId, wrapWithTryCatch } from "@/utils/api.utils";
 
 export async function GET(request) {
-  // return wrapWithTryCatch(async () => {
-  //   const foundUser = await findUser(request);
+  return wrapWithTryCatch(async () => {
+    const foundUser = await findUser(request);
 
-  //   if (!foundUser) {
-  //     return NextResponse.json(
-  //       {
-  //         error: ".ابتدا وارد حساب کاربری خود شوید",
-  //       },
-  //       { status: 401 },
-  //     );
-  //   }
+    if (!foundUser) {
+      return NextResponse.json(
+        {
+          error: ".ابتدا وارد حساب کاربری خود شوید",
+        },
+        { status: 401 },
+      );
+    }
 
     try {
       const { searchParams } = new URL(request.url);
@@ -277,7 +277,7 @@ export async function GET(request) {
         { status: 500 },
       );
     }
-  // });
+  });
 }
 
 async function findUser(request) {

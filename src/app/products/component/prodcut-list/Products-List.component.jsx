@@ -532,15 +532,10 @@ export default function ProductList() {
       <div className={styles["header-filter"]}>
         <SortingProductsComponent />
       </div>
-      {/* )} */}
-
       <div className={styles["side-filter"]}>
         <FilteringProductsComponent />
-
         <InventoryFilterComponent />
       </div>
-      {/* )} */}
-
       <div className={styles["body-filter"]}>
         {
           loading ? (

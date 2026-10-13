@@ -14,8 +14,8 @@ export async function fetchWithToast(input, init = {}, successMessage) {
     let message = "خطای غیر منتظره رخ داد.";
 
     if ("error" in result) {
-      // message = result.error;
-      message = "ارتباط با سرور قطع هست";
+      message = result.error;
+      // message = "ارتباط با سرور قطع هست";
     }
 
     toast.error(message);
@@ -43,3 +43,4 @@ export async function fetchWithoutToast(input, init = {}) {
 
   return result;
 }
+

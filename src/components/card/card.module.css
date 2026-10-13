@@ -1,6 +1,6 @@
 .wrapper {
   display: grid;
-  gap: 0.25rem;
+  /* gap: 0.25rem; */
 
   .title {
     font-size: var(--fz-500);
