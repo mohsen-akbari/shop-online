@@ -406,6 +406,7 @@ import { ProductsContext } from "../../providers/products/products.provider";
 import InventoryFilterComponent from "../filter-component/Inventory-filter/Inventory-filter.component";
 import FilteringProductsComponent from "../filtering-box/filtering-products.component";
 import ProductBox from "../product-box/Product-Box.component";
+import SkeletonBoxComponent from "../skeleton/skeleton-box.component";
 import SortingProductsComponent from "../sorting-box/sorting-products.component";
 
 import styles from "./product-List.module.css";
@@ -527,6 +528,8 @@ export default function ProductList() {
     return pages;
   };
 
+  const skeletons = Array.from({ length: 20 });
+
   return (
     <div className={styles["container-filter"]}>
       <div className={styles["header-filter"]}>
@@ -540,15 +543,23 @@ export default function ProductList() {
         {
           loading ? (
             // Loading
-            <div className={styles.loading}>
-              <ColorRing
-                visible={true}
-                height="70"
-                width="70"
-                ariaLabel="color-ring-loading"
-                wrapperClass="color-ring-wrapper"
-                colors={["#3167f1", "#3167f1", "#3167f1", "#3167f1", "#3167f1"]}
-              />
+            // <div className={styles.loading}>
+            //   <ColorRing
+            //     visible={true}
+            //     height="70"
+            //     width="70"
+            //     ariaLabel="color-ring-loading"
+            //     wrapperClass="color-ring-wrapper"
+            //     colors={["#3167f1", "#3167f1", "#3167f1", "#3167f1", "#3167f1"]}
+            //   />
+            // </div>
+
+            <div className={styles["skeleton-container"]}>
+              {skeletons.map((_, index) => (
+                <div key={index}>
+                  <SkeletonBoxComponent />
+                </div>
+              ))}
             </div>
           ) : (
             visibleProducts.length > 0 && (

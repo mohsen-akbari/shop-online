@@ -403,6 +403,6 @@ export default function ProductBox({ product }) {
           )}
         </div>
       </div>
-    </div>
+    </div> 
   );
 }

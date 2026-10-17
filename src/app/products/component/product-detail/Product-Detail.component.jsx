@@ -26,7 +26,7 @@ import { enTofa } from "@/utils/Utilities";
 import styles from "./product-detail.module.css";
 
 export default function ProductDetailComponent({ product, id }) {
-  let { cart, addToCart, removeFromCart, updateQuantity, getTotal, clearCart } =
+  let { cart, addToCart, removeFromCart } =
     useContext(CartContext);
 
   const handleHasProduct = () => {
