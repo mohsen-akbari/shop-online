@@ -542,18 +542,6 @@ export default function ProductList() {
       <div className={styles["body-filter"]}>
         {
           loading ? (
-            // Loading
-            // <div className={styles.loading}>
-            //   <ColorRing
-            //     visible={true}
-            //     height="70"
-            //     width="70"
-            //     ariaLabel="color-ring-loading"
-            //     wrapperClass="color-ring-wrapper"
-            //     colors={["#3167f1", "#3167f1", "#3167f1", "#3167f1", "#3167f1"]}
-            //   />
-            // </div>
-
             <div className={styles["skeleton-container"]}>
               {skeletons.map((_, index) => (
                 <div key={index}>
