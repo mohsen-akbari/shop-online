@@ -1,0 +1,121 @@
+.profile-form-skeleton {
+  background-color: var(--color-surface-700);
+  border: 1px solid #e8e8f0;
+  border-radius: var(--border-radius);
+  display: grid;
+  gap: 1rem;
+  padding: 3rem 3rem 1rem 3rem;
+  inline-size: min(40rem, 100%);
+  margin: auto;
+  box-sizing: border-box;
+  border-radius: var(--border-radius);
+  width: 632px;
+  height: 378px;
+}
+
+.skeleton-title,
+.skeleton-label,
+.skeleton-box,
+.skeleton-input,
+.skeleton-button {
+  position: relative;
+  overflow: hidden;
+  background-color: #eeeeee;
+  border-radius: 6px;
+}
+
+.skeleton-title::after,
+.skeleton-label::after,
+.skeleton-box::after,
+.skeleton-input::after,
+.skeleton-button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.65),
+    transparent
+  );
+  animation: shimmer 1.5s infinite;
+}
+
+.skeleton-title {
+  width: 180px;
+  height: 35px;
+  margin-inline: auto;
+  border-radius: 6px;
+}
+
+.skeleton-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.skeleton-field {
+  min-width: 0;
+}
+
+.skeleton-label {
+  width: 90px;
+  height: 15px;
+  margin-bottom: 0.2rem;
+  border-radius: 4px;
+}
+
+.skeleton-box {
+  width: 100%;
+  min-height: calc(1rem + 1rem + 2px);
+  padding: 0.5rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.skeleton-input {
+  flex: 1 1 0;
+  height: 32px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.btn-container {
+  grid-column: 1 / 3;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.2rem;
+}
+
+.skeleton-button {
+  width: min(10rem, 100%);
+  height: 2.6rem;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .profile-form-skeleton {
+    padding: 2rem 1.5rem !important;
+  }
+
+  .skeleton-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-container {
+    grid-column: 1;
+  }
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}

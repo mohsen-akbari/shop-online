@@ -1,8 +1,6 @@
-"use client";
+import styles from "./profile-form-skeleton.module.css";
 
-import styles from "./ProfileFormSkeleton.module.css";
-
-export default function ProfileFormSkeleton() {
+export default function ProfileFormSkeletonComponent() {
   return (
     <div className={styles["profile-form-skeleton"]}>
       <div className={styles["skeleton-title"]} />

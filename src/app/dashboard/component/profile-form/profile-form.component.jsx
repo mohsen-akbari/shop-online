@@ -21,8 +21,7 @@ import TablerJewishStarFilled from "@/icons/TablerJewishStarFilled";
 import { enTofa } from "@/utils/Utilities";
 import { fetchWithToast } from "@/utils/fetch-utils";
 
-import ProductSkeleton from "../skeleton/ProfileFormSkeleton";
-import ProfileFormSkeleton from "../skeleton/ProfileFormSkeleton";
+import ProfileFormSkeletonComponent from "../skeleton/profile-form-skeleton.component";
 
 import styles from "./profile-form.module.css";
 
@@ -189,20 +188,7 @@ export default function ProfileFormComponent() {
   };
 
   if (status === "pending") {
-    return (
-      <ProfileFormSkeleton />
-      // <div className={styles["loading-container"]}>
-      //   <ColorRing
-      //     visible={true}
-      //     height="70"
-      //     width="70"
-      //     ariaLabel="color-ring-loading"
-      //     wrapperStyle={{}}
-      //     wrapperClass="color-ring-wrapper"
-      //     colors={["#3167f1", "#3167f1", "#3167f1", "#3167f1", "#3167f1"]}
-      //   />
-      // </div>
-    );
+    return <ProfileFormSkeletonComponent />;
   }
 
   if (status === "error") {
