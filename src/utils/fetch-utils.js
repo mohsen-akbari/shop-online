@@ -38,9 +38,8 @@ export async function fetchWithoutToast(input, init = {}) {
   const result = await response.json();
 
   if (!response.ok) {
-    return null;
+    return { error: "ارتیاط با سرور قطع شده است" };
   }
 
-  return result;
+  return { data: result?.data };
 }
-

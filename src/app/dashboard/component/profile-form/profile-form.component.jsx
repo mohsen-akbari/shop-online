@@ -19,7 +19,7 @@ import MingcuteUser3Line from "@/icons/MingcuteUser3Line";
 import TablerJewishStarFilled from "@/icons/TablerJewishStarFilled";
 
 import { enTofa } from "@/utils/Utilities";
-import { fetchWithToast } from "@/utils/fetch-utils";
+import { fetchWithoutToast, fetchWithToast } from "@/utils/fetch-utils";
 
 import ProfileFormSkeletonComponent from "../skeleton/profile-form-skeleton.component";
 
@@ -35,7 +35,7 @@ export default function ProfileFormComponent() {
   const [loading, setLoading] = useState();
 
   const fetchProfile = async () => {
-    const result = await fetchWithToast("/api/dashboard/profile");
+    const result = await fetchWithoutToast("/api/dashboard/profile");
 
     if (result.error) {
       setStatus("error");
