@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 
 import FooterComponent from "@/components/footer/footer.component";
 import HeaderComponent from "@/components/header/header.component";
+import ScrollTopComponent from "@/components/scroll-top/scroll-top.component";
 import ToasterComponent from "@/components/toaster/toaster.component";
 
 import { CartProvider } from "@/contexts/CartContext";
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fa" dir="rtl" className={vazirmatn.className}>
       <body>
+        <ScrollTopComponent />
         {!isPublicRoute ? (
           <CartProvider>
             <HeaderComponent />
