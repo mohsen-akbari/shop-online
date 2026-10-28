@@ -36,7 +36,7 @@ export default function ProductDetailComponent({ product, id }) {
     }
     return true;
   };
-
+  
   return (
     <div className={styles["product-detail"]}>
       <div className={styles["product-detail-content"]}>

@@ -3,9 +3,11 @@
 import { useState } from "react";
 
 import dynamic from "next/dynamic";
+import Image from "next/image";
 
 import clsx from "clsx";
 
+import banner from "@/../public/images/banner-info/b.png";
 import { iranLocations } from "@/data/iran-location";
 
 import FluentErrorCircle12Filled from "@/icons/FluentErrorCircle12Filled";
@@ -185,8 +187,10 @@ function PersonalComponent() {
           <div className={styles.title}>
             <h2>اطلاعات کاربر</h2>
           </div>
-
-          <p>اطلاعات شخصی و آدرس خود را وارد کنید</p>
+          <div className={styles.banner}>
+            <Image src={banner} alt="banner" />
+          </div>
+          {/* <p>اطلاعات شخصی و آدرس خود را وارد کنید</p> */}
         </div>
 
         <div className={styles["form-grid"]}>

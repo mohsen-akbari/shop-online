@@ -11,5 +11,9 @@ export function filtersReducer(filters, action) {
     case "removed_all": {
       return {};
     }
+    
+    default: {
+      return filters;
+    }
   }
 }
