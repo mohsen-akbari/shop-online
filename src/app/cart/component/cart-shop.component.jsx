@@ -97,11 +97,6 @@ export default function CartShopComponent() {
             </div>
 
             <div className={styles.remove}>
-              {/* <ButtonComponent onClick={() => clearCart()}>
-                <span>حذف کل سبد خرید</span>
-
-                <MingcuteDelete2Line width="22" height="22" />
-              </ButtonComponent> */}
               <ButtonComponent onClick={openClearCartModal}>
                 <span>حذف کل سبد خرید</span>
                 <MingcuteDelete2Line width="22" height="22" />

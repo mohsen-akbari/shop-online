@@ -31,7 +31,13 @@
         gap: 0.5rem;
 
         > button {
-          background-color: transparent;
+          border: 1px solid rgb(255, 158, 158) !important;
+          color: var(--color-danger);
+          box-shadow: 0 2px 2px rgb(255, 214, 214) !important;
+
+          &:hover {
+            background-color: hsl(0, 100%, 97%);
+          }
         }
 
         span {
@@ -262,7 +268,7 @@
           margin-block-start: 1rem;
           background-color: #7c3aed;
           background: linear-gradient(135deg, #4f46e5, #7c3aed);
-          color: var(--color-white)
+          color: var(--color-white);
         }
       }
     }
