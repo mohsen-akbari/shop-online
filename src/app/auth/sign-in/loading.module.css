@@ -1,0 +1,7 @@
+.three {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80dvh;
+  width: 100%;
+}
