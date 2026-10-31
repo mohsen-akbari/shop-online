@@ -9,7 +9,7 @@ export default async function page({ searchParams }) {
   return (
     <FiltersProvider defaultFilters={defaultFilters}>
       {/* <ProductsProvider> */}
-        <LatestProducts />
+      <LatestProducts />
       {/* </ProductsProvider> */}
     </FiltersProvider>
   );
@@ -26,7 +26,7 @@ export default async function page({ searchParams }) {
 // }
 
 function generateDefaultFilters(searchParams) {
-  const { query, brand, sort } = searchParams;
+  const { query, brand, sort, Inventory } = searchParams;
 
   return {
     ...(query && { query: normalizeFilter(query) }),
@@ -35,6 +35,7 @@ function generateDefaultFilters(searchParams) {
       value: "بهترین",
       label: "بهترین",
     },
+    Inventory: normalizeFilter(Inventory) ?? "همه کالا ها",
   };
 }
 

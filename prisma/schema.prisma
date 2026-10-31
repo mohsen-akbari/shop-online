@@ -34,4 +34,5 @@ model Product {
   resolution  String
   screen      String
   size        Float
+  stock       Int     @default(0)
 }

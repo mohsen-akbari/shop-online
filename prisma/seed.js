@@ -27,6 +27,7 @@ let products = [
     resolution: " 50 مگاپیکسل",
     screen: "amoled",
     size: 6.3,
+    stock: 50,
   },
   {
     title:
@@ -41,6 +42,7 @@ let products = [
     resolution: " 30 مگاپیکسل",
     screen: "amoled",
     size: 5.5,
+    stock: 50,
   },
   {
     title:
@@ -55,6 +57,7 @@ let products = [
     resolution: " 160 مگاپیکسل",
     screen: "amoled",
     size: 6.3,
+    stock: 50,
   },
   {
     title:
@@ -69,6 +72,7 @@ let products = [
     resolution: " 150 مگاپیکسل",
     screen: "amoled",
     size: 6.8,
+    stock: 50,
   },
   {
     title:
@@ -83,6 +87,7 @@ let products = [
     resolution: " 170 مگاپیکسل",
     screen: "amoled",
     size: 5.8,
+    stock: 50,
   },
   {
     title:
@@ -97,6 +102,7 @@ let products = [
     resolution: " 160 مگاپیکسل",
     screen: "amoled",
     size: 6.5,
+    stock: 50,
   },
   {
     title:
@@ -111,6 +117,7 @@ let products = [
     resolution: " 140 مگاپیکسل",
     screen: "amoled",
     size: 5.9,
+    stock: 50,
   },
   {
     title:
@@ -125,6 +132,7 @@ let products = [
     resolution: " 250 مگاپیکسل",
     screen: "amoled",
     size: 6.3,
+    stock: 50,
   },
   {
     title:
@@ -139,6 +147,7 @@ let products = [
     resolution: " 100 مگاپیکسل",
     screen: "amoled",
     size: 6.2,
+    stock: 50,
   },
   {
     title:
@@ -153,6 +162,7 @@ let products = [
     resolution: " 60 مگاپیکسل",
     screen: "amoled",
     size: 6.5,
+    stock: 50,
   },
   {
     title:
@@ -167,6 +177,7 @@ let products = [
     resolution: " 90 مگاپیکسل",
     screen: "amoled",
     size: 6.3,
+    stock: 50,
   },
   {
     title:
@@ -181,6 +192,7 @@ let products = [
     resolution: " 40 مگاپیکسل",
     screen: "amoled",
     size: 6.2,
+    stock: 50,
   },
   {
     title:
@@ -195,6 +207,7 @@ let products = [
     resolution: " 150 مگاپیکسل",
     screen: "amoled",
     size: 6.6,
+    stock: 50,
   },
   {
     title:
@@ -209,6 +222,7 @@ let products = [
     resolution: " 200 مگاپیکسل",
     screen: "amoled",
     size: 6.9,
+    stock: 50,
   },
   {
     title:
@@ -223,6 +237,7 @@ let products = [
     resolution: " 100 مگاپیکسل",
     screen: "amoled",
     size: 6.2,
+    stock: 50,
   },
   {
     title:
@@ -237,6 +252,7 @@ let products = [
     resolution: " 50 مگاپیکسل",
     screen: "amoled",
     size: 5.9,
+    stock: 50,
   },
   {
     title:
@@ -251,6 +267,7 @@ let products = [
     resolution: " 60 مگاپیکسل",
     screen: "amoled",
     size: 5.9,
+    stock: 50,
   },
   {
     title:
@@ -265,6 +282,7 @@ let products = [
     resolution: " 60 مگاپیکسل",
     screen: "amoled",
     size: 5.8,
+    stock: 50,
   },
   {
     title:
@@ -279,6 +297,7 @@ let products = [
     resolution: " 300 مگاپیکسل",
     screen: "amoled",
     size: 5.7,
+    stock: 50,
   },
   {
     title:
@@ -293,6 +312,7 @@ let products = [
     resolution: " 50 مگاپیکسل",
     screen: "amoled",
     size: 5.6,
+    stock: 50,
   },
   {
     title:
@@ -307,6 +327,7 @@ let products = [
     resolution: " 150 مگاپیکسل",
     screen: "amoled",
     size: 6.4,
+    stock: 50,
   },
   {
     title:
@@ -321,6 +342,7 @@ let products = [
     resolution: " 170 مگاپیکسل",
     screen: "amoled",
     size: 6.2,
+    stock: 50,
   },
   {
     title:
@@ -335,6 +357,7 @@ let products = [
     resolution: " 130 مگاپیکسل",
     screen: "amoled",
     size: 6.1,
+    stock: 50,
   },
   {
     title:
@@ -349,11 +372,12 @@ let products = [
     resolution: " 170 مگاپیکسل",
     screen: "amoled",
     size: 5.9,
+    stock: 50,
   },
   {
     title:
       "گوشی شیائومی Poco C71 دو سیم کارت 128 گیگابایت و رم 4 گیگابایت - به همراه سه عدد قاب",
-    price: 0,
+    price: 55000000,
     description: "",
     image: "/images/xiaomi/25.webp",
     brand: "شیائومی",
@@ -363,6 +387,7 @@ let products = [
     resolution: " 80 مگاپیکسل",
     screen: "amoled",
     size: 5.3,
+    stock: 0,
   },
   {
     title:
@@ -377,11 +402,12 @@ let products = [
     resolution: " 50 مگاپیکسل",
     screen: "amoled",
     size: 5.7,
+    stock: 50,
   },
   {
     title:
       "گوشی موبایل شیائومی مدل Redmi A3 Pro دو سیم کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت ",
-    price: 0,
+    price: 40000000,
     description: "",
     image: "/images/xiaomi/27.webp",
     brand: "شیائومی",
@@ -391,11 +417,12 @@ let products = [
     resolution: " 60 مگاپیکسل",
     screen: "amoled",
     size: 5.2,
+    stock: 0,
   },
   {
     title:
       "گوشی موبایل شیائومی مدل Redmi 15C NFC 4G دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت",
-    price: 0,
+    price: 66000000,
     description: "",
     image: "/images/xiaomi/28.webp",
     brand: "شیائومی",
@@ -405,6 +432,7 @@ let products = [
     resolution: " 180 مگاپیکسل",
     screen: "amoled",
     size: 6.5,
+    stock: 50,
   },
   {
     title:
@@ -419,6 +447,7 @@ let products = [
     resolution: " 60 مگاپیکسل",
     screen: "amoled",
     size: 6.3,
+    stock: 50,
   },
   {
     title:
@@ -433,6 +462,7 @@ let products = [
     resolution: " 20 مگاپیکسل",
     screen: "amoled",
     size: 5.5,
+    stock: 50,
   },
   {
     title:
@@ -447,11 +477,12 @@ let products = [
     resolution: " 90 مگاپیکسل",
     screen: "amoled",
     size: 6.3,
+    stock: 50,
   },
   {
     title:
       "گوشی موبایل شیائومی مدل Redmi Note 14 4G دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت - پک اندونزی رام گلوبال",
-    price: 0,
+    price: 46000000,
     description: "",
     image: "/images/xiaomi/32.webp",
     brand: "شیائومی",
@@ -461,6 +492,7 @@ let products = [
     resolution: " 120 مگاپیکسل",
     screen: "amoled",
     size: 6.8,
+    stock: 0,
   },
   {
     title:
@@ -475,6 +507,7 @@ let products = [
     resolution: " 40 مگاپیکسل",
     screen: "amoled",
     size: 6.1,
+    stock: 50,
   },
   {
     title:
@@ -489,6 +522,7 @@ let products = [
     resolution: " 90 مگاپیکسل",
     screen: "amoled",
     size: 5.8,
+    stock: 50,
   },
   {
     title:
@@ -503,6 +537,7 @@ let products = [
     resolution: " 80 مگاپیکسل",
     screen: "amoled",
     size: 6.7,
+    stock: 50,
   },
   {
     title:
@@ -517,11 +552,12 @@ let products = [
     resolution: " 50 مگاپیکسل",
     screen: "amoled",
     size: 6.6,
+    stock: 50,
   },
   {
     title:
       "گوشی موبایل شیائومی مدل Poco C85 4G دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت",
-    price: 0,
+    price: 80000000,
     description: "",
     image: "/images/xiaomi/37.webp",
     brand: "شیائومی",
@@ -531,6 +567,7 @@ let products = [
     resolution: " 40 مگاپیکسل",
     screen: "amoled",
     size: 6.3,
+    stock: 50,
   },
   {
     title:
@@ -545,11 +582,12 @@ let products = [
     resolution: " 80 مگاپیکسل",
     screen: "amoled",
     size: 6.3,
+    stock: 50,
   },
   {
     title:
       "گوشی موبایل سامسونگ مدل Galaxy A26 دو سیم کارت ظرفیت 128 گیگابایت و رم 6 گیگابایت - ویتنام",
-    price: 0,
+    price: 75000000,
     description: "",
     image: "/images/samsung/1.webp",
     brand: "سامسونگ",
@@ -559,6 +597,7 @@ let products = [
     resolution: " 220 مگاپیکسل",
     screen: "amoled",
     size: 6.6,
+    stock: 0,
   },
   {
     title:
@@ -573,6 +612,7 @@ let products = [
     resolution: " 160 مگاپیکسل",
     screen: "amoled",
     size: 6.6,
+    stock: 50,
   },
   {
     title:
@@ -587,6 +627,7 @@ let products = [
     resolution: " 80 مگاپیکسل",
     screen: "amoled",
     size: 6.7,
+    stock: 50,
   },
   {
     title:
@@ -601,6 +642,7 @@ let products = [
     resolution: " 100 مگاپیکسل",
     screen: "amoled",
     size: 5.9,
+    stock: 50,
   },
   {
     title:
@@ -615,6 +657,7 @@ let products = [
     resolution: " 30 مگاپیکسل",
     screen: "amoled",
     size: 5.6,
+    stock: 50,
   },
   {
     title:
@@ -629,6 +672,7 @@ let products = [
     resolution: " 70 مگاپیکسل",
     screen: "amoled",
     size: 6.2,
+    stock: 50,
   },
   {
     title:
@@ -643,6 +687,7 @@ let products = [
     resolution: " 200 مگاپیکسل",
     screen: "amoled",
     size: 6.3,
+    stock: 50,
   },
   {
     title:
@@ -657,6 +702,7 @@ let products = [
     resolution: " 20 مگاپیکسل",
     screen: "amoled",
     size: 6.6,
+    stock: 50,
   },
   {
     title:
@@ -671,6 +717,7 @@ let products = [
     resolution: " 80 مگاپیکسل",
     screen: "amoled",
     size: 6.2,
+    stock: 50,
   },
   {
     title:
@@ -685,6 +732,7 @@ let products = [
     resolution: " 80 مگاپیکسل",
     screen: "amoled",
     size: 6.2,
+    stock: 50,
   },
   {
     title:
@@ -699,11 +747,12 @@ let products = [
     resolution: " 50 مگاپیکسل",
     screen: "amoled",
     size: 6.2,
+    stock: 50,
   },
   {
     title:
       "گوشی موبایل سامسونگ مدل Galaxy A34 5G دو سیم کارت ظرفیت 128 گیگابایت و رم 6 گیگابایت - ویتنام",
-    price: 0,
+    price: 45000000,
     description: "",
     image: "/images/samsung/12.webp",
     brand: "سامسونگ",
@@ -713,11 +762,12 @@ let products = [
     resolution: " 90 مگاپیکسل",
     screen: "amoled",
     size: 6.8,
+    stock: 0,
   },
   {
     title:
       "گوشی موبایل سامسونگ مدل Galaxy A17 4G دو سیم کارت ظرفیت 128 گیگابایت و رم 6 گیگابایت  - به همراه شارژر 25 وات سامسونگ",
-    price: 0,
+    price: 40000000,
     description: "",
     image: "/images/samsung/13.webp",
     brand: "سامسونگ",
@@ -727,11 +777,12 @@ let products = [
     resolution: " 60 مگاپیکسل",
     screen: "amoled",
     size: 6.6,
+    stock: 50,
   },
   {
     title:
       "گوشی موبایل سامسونگ مدل Galaxy A07 دو سیم کارت ظرفیت 128گیگابایت و رم 6 گیگابایت  - نسخه به همراه شارژر",
-    price: 0,
+    price: 65000000,
     description: "",
     image: "/images/samsung/14.webp",
     brand: "سامسونگ",
@@ -741,11 +792,12 @@ let products = [
     resolution: " 40 مگاپیکسل",
     screen: "amoled",
     size: 6.3,
+    stock: 50,
   },
   {
     title:
       "گوشی موبایل سامسونگ مدل Galaxy A17 4G دو سیم کارت ظرفیت 128 گیگابایت و رم 6 گیگابایت - ویتنام به همراه شارژر 25 وات سامسونگ",
-    price: 0,
+    price: 52000000,
     description: "",
     image: "/images/samsung/15.webp",
     brand: "سامسونگ",
@@ -755,11 +807,12 @@ let products = [
     resolution: " 20 مگاپیکسل",
     screen: "amoled",
     size: 6.1,
+    stock: 50,
   },
   {
     title:
       "گوشی موبایل سامسونگ مدل Galaxy S25 Ultra دو سیم کارت ظرفیت 256 گیگابایت و رم 12 گیگابایت - پک ویتنام",
-    price: 0,
+    price: 78000000,
     description: "",
     image: "/images/samsung/16.webp",
     brand: "سامسونگ",
@@ -769,6 +822,7 @@ let products = [
     resolution: " 250 مگاپیکسل",
     screen: "amoled",
     size: 6.8,
+    stock: 50,
   },
   {
     title:
@@ -783,11 +837,12 @@ let products = [
     resolution: " 300 مگاپیکسل",
     screen: "amoled",
     size: 6.5,
+    stock: 50,
   },
   {
     title:
       "گوشی موبایل سامسونگ مدل Galaxy A17 4G دو سیم کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت - ویتنام به همراه شارژر 25 وات سامسونگ",
-    price: 0,
+    price: 79000000,
     description: "",
     image: "/images/samsung/18.webp",
     brand: "سامسونگ",
@@ -797,11 +852,12 @@ let products = [
     resolution: " 100 مگاپیکسل",
     screen: "amoled",
     size: 6.8,
+    stock: 0,
   },
   {
     title:
       "گوشی موبایل سامسونگ مدل Galaxy S26 Plus دو سیم‌کارت ظرفیت 512 گیگابایت و رم 12 گیگابایت - ویتنام",
-    price: 0,
+    price: 90000000,
     description: "",
     image: "/images/samsung/19.webp",
     brand: "سامسونگ",
@@ -811,11 +867,12 @@ let products = [
     resolution: " 110 مگاپیکسل",
     screen: "amoled",
     size: 5.8,
+    stock: 50,
   },
   {
     title:
       "گوشی موبایل سامسونگ مدل Galaxy A27 دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت  - ویتنام",
-    price: 0,
+    price: 38000000,
     description: "",
     image: "/images/samsung/20.webp",
     brand: "سامسونگ",
@@ -825,6 +882,7 @@ let products = [
     resolution: " 100 مگاپیکسل",
     screen: "amoled",
     size: 6.8,
+    stock: 50,
   },
   {
     title:
@@ -839,6 +897,7 @@ let products = [
     resolution: " 120 مگاپیکسل",
     screen: "amoled",
     size: 6.4,
+    stock: 50,
   },
   {
     title:
@@ -853,11 +912,12 @@ let products = [
     resolution: " 160 مگاپیکسل",
     screen: "amoled",
     size: 6.8,
+    stock: 50,
   },
   {
     title:
       "گوشی موبایل سامسونگ مدل Galaxy A16 4G دو سیم کارت ظرفیت 128 گیگابایت و رم 6 گیگابایت - ویتنام",
-    price: 0,
+    price: 48000000,
     description: "",
     image: "/images/samsung/23.webp",
     brand: "سامسونگ",
@@ -867,11 +927,12 @@ let products = [
     resolution: " 150 مگاپیکسل",
     screen: "amoled",
     size: 5.2,
+    stock: 0,
   },
   {
     title:
       "گوشی موبایل سامسونگ مدل Galaxy S23 Ultra دو سیم کارت ظرفیت 256 گیگابایت و رم 12 گیگابایت - ویتنام",
-    price: 0,
+    price: 150000000,
     description: "",
     image: "/images/samsung/24.webp",
     brand: "سامسونگ",
@@ -881,11 +942,12 @@ let products = [
     resolution: " 80 مگاپیکسل",
     screen: "amoled",
     size: 6.3,
+    stock: 50,
   },
   {
     title:
       "گوشی موبایل سامسونگ مدل Galaxy A26 دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت - به همراه شارژر 25 وات سامسونگ",
-    price: 0,
+    price: 85000000,
     description: "",
     image: "/images/samsung/25.webp",
     brand: "سامسونگ",
@@ -895,11 +957,12 @@ let products = [
     resolution: " 190 مگاپیکسل",
     screen: "amoled",
     size: 6.3,
+    stock: 50,
   },
   {
     title:
       "گوشی موبایل سامسونگ مدل Galaxy A17 4G دو سیم کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت - ویتنام به همراه شارژر 25 وات سامسونگ",
-    price: 0,
+    price: 75000000,
     description: "",
     image: "/images/samsung/26.webp",
     brand: "سامسونگ",
@@ -909,11 +972,12 @@ let products = [
     resolution: " 170 مگاپیکسل",
     screen: "amoled",
     size: 6.3,
+    stock: 50,
   },
   {
     title:
       "گوشی موبایل سامسونگ مدل Galaxy A16 4G دو سیم کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت - ویتنام",
-    price: 0,
+    price: 42000000,
     description: "",
     image: "/images/samsung/27.webp",
     brand: "سامسونگ",
@@ -923,6 +987,7 @@ let products = [
     resolution: " 160 مگاپیکسل",
     screen: "amoled",
     size: 6.3,
+    stock: 50,
   },
   {
     title:
@@ -937,11 +1002,12 @@ let products = [
     resolution: " 140 مگاپیکسل",
     screen: "amoled",
     size: 6.1,
+    stock: 50,
   },
   {
     title:
       "گوشی موبایل سامسونگ مدل Galaxy A56 دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت - ویتنام - به همراه شارژر 25 وات سامسونگ",
-    price: 0,
+    price: 96000000,
     description: "",
     image: "/images/samsung/29.webp",
     brand: "سامسونگ",
@@ -951,11 +1017,12 @@ let products = [
     resolution: " 40 مگاپیکسل",
     screen: "amoled",
     size: 5.6,
+    stock: 50,
   },
   {
     title:
       " گوشی موبایل سامسونگ مدل Galaxy A06 دو سیم کارت ظرفیت 64 گیگابایت و رم 4 گیگابایت",
-    price: 0,
+    price: 64000000,
     description: "",
     image: "/images/samsung/30.webp",
     brand: "سامسونگ",
@@ -965,11 +1032,12 @@ let products = [
     resolution: " 70 مگاپیکسل",
     screen: "amoled",
     size: 6.2,
+    stock: 50,
   },
   {
     title:
       "گوشی موبایل سامسونگ مدل Galaxy A17 4G دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت - ویتنام - به همراه شارژر 25 وات سامسونگ",
-    price: 0,
+    price: 55000000,
     description: "",
     image: "/images/samsung/31.webp",
     brand: "سامسونگ",
@@ -979,11 +1047,12 @@ let products = [
     resolution: " 50 مگاپیکسل",
     screen: "amoled",
     size: 6.4,
+    stock: 50,
   },
   {
     title:
       "گوشی موبایل سامسونگ مدل Galaxy A36 دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت - ویتنام - به همراه شارژر 25 وات سامسونگ",
-    price: 0,
+    price: 85000000,
     description: "",
     image: "/images/samsung/32.webp",
     brand: "سامسونگ",
@@ -993,11 +1062,12 @@ let products = [
     resolution: " 60 مگاپیکسل",
     screen: "amoled",
     size: 6.7,
+    stock: 50,
   },
   {
     title:
       "گوشی موبایل سامسونگ مدل Galaxy A06 دو سیم کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت - به همراه شارژر 25 وات سامسونگ",
-    price: 0,
+    price: 79000000,
     description: "",
     image: "/images/samsung/33.webp",
     brand: "سامسونگ",
@@ -1007,11 +1077,12 @@ let products = [
     resolution: " 150 مگاپیکسل",
     screen: "amoled",
     size: 6.8,
+    stock: 50,
   },
   {
     title:
       "گوشی موبایل سامسونگ مدل Galaxy S26 Ultra دو سیم کارت ظرفیت 256 گیگابایت و رم 12 گیگابایت - ویتنام",
-    price: 0,
+    price: 455000000,
     description: "",
     image: "/images/samsung/34.webp",
     brand: "سامسونگ",
@@ -1021,6 +1092,7 @@ let products = [
     resolution: " 300 مگاپیکسل",
     screen: "amoled",
     size: 6.9,
+    stock: 50,
   },
   {
     title:
@@ -1035,11 +1107,12 @@ let products = [
     resolution: " 50 مگاپیکسل",
     screen: "LTPO Super Retina XDR OLED",
     size: 6.9,
+    stock: 50,
   },
   {
     title:
       "گوشی موبایل اپل مدل iPhone 11 تک سیم‌ کارت ظرفیت 64 گیگابایت و رم 4 گیگابایت - نات اکتیو",
-    price: 0,
+    price: 150000000,
     description: "",
     image: "/images/apple/2.webp",
     brand: "اپل",
@@ -1049,6 +1122,7 @@ let products = [
     resolution: " 12 مگاپیکسل",
     screen: "XDR OLED",
     size: 6.1,
+    stock: 50,
   },
   {
     title:
@@ -1063,10 +1137,11 @@ let products = [
     resolution: " 80 مگاپیکسل",
     screen: "Super Retina XDR OLED",
     size: 6.5,
+    stock: 50,
   },
   {
     title: "گوشی موبایل اپل مدل iPhone 7 (Product) Red ظرفیت 128 گیگابایت",
-    price: 0,
+    price: 120000000,
     description: "",
     image: "/images/apple/4.webp",
     brand: "اپل",
@@ -1076,11 +1151,12 @@ let products = [
     resolution: " 10 مگاپیکسل",
     screen: "OLED",
     size: 6.2,
+    stock: 0,
   },
   {
     title:
       "گوشی موبایل اپل مدل iPhone 16 Pro Max ZAA دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت - رجیستر شده",
-    price: 0,
+    price: 435000000,
     description: "",
     image: "/images/apple/5.webp",
     brand: "اپل",
@@ -1090,6 +1166,7 @@ let products = [
     resolution: " 70 مگاپیکسل",
     screen: "Super Retina XDR OLED",
     size: 6.3,
+    stock: 50,
   },
   {
     title:
@@ -1104,6 +1181,7 @@ let products = [
     resolution: " 40 مگاپیکسل",
     screen: "LTPO XDR OLED",
     size: 5.9,
+    stock: 50,
   },
   {
     title:
@@ -1118,10 +1196,11 @@ let products = [
     resolution: " 150 مگاپیکسل",
     screen: "LTPO Super Retina XDR OLED",
     size: 6.8,
+    stock: 50,
   },
   {
     title: "گوشی موبایل اپل مدل iPhone XS Max دو سیم‌ کارت ظرفیت 256 گیگابایت",
-    price: 0,
+    price: 145000000,
     description: "",
     image: "/images/apple/8.webp",
     brand: "اپل",
@@ -1131,10 +1210,11 @@ let products = [
     resolution: " 30 مگاپیکسل",
     screen: "XDR OLED",
     size: 5.8,
+    stock: 50,
   },
   {
     title: "گوشی موبایل اپل مدل iPhone XS تک سیم کارت ظرفیت 256 گیگابایت",
-    price: 0,
+    price: 136000000,
     description: "",
     image: "/images/apple/9.webp",
     brand: "اپل",
@@ -1144,6 +1224,7 @@ let products = [
     resolution: " 20 مگاپیکسل",
     screen: "LTPO XDR OLED",
     size: 6.2,
+    stock: 50,
   },
   {
     title:
@@ -1158,11 +1239,12 @@ let products = [
     resolution: " 80 مگاپیکسل",
     screen: "Super OLED",
     size: 5.8,
+    stock: 50,
   },
   {
     title:
       "گوشی موبایل اپل مدل iPhone 13 Pro Max A2644 دو سیم‌ کارت ظرفیت 512 گیگابایت و رم 6 - اکتیو ",
-    price: 0,
+    price: 250000000,
     description: "",
     image: "/images/apple/11.webp",
     brand: "اپل",
@@ -1172,6 +1254,7 @@ let products = [
     resolution: " 100 مگاپیکسل",
     screen: "LTPO OLED",
     size: 6.1,
+    stock: 0,
   },
   {
     title:
@@ -1186,10 +1269,11 @@ let products = [
     resolution: " 40 مگاپیکسل",
     screen: "LTPO OLED",
     size: 5.9,
+    stock: 50,
   },
   {
     title: "گوشی موبایل اپل مدل iPhone 6s ظرفیت 64 گیگابایت",
-    price: 0,
+    price: 89000000,
     description: "",
     image: "/images/apple/13.webp",
     brand: "اپل",
@@ -1199,11 +1283,12 @@ let products = [
     resolution: " 8 مگاپیکسل",
     screen: "LED",
     size: 5.5,
+    stock: 50,
   },
   {
     title:
       "گوشی موبایل اپل مدل iPhone XS Max A1921 LLA تک سیم‌ کارت ظرفیت 64 گیگابایت",
-    price: 0,
+    price: 90000000,
     description: "",
     image: "/images/apple/14.webp",
     brand: "اپل",
@@ -1213,6 +1298,7 @@ let products = [
     resolution: " 40 مگاپیکسل",
     screen: "LTPO OLED",
     size: 5.7,
+    stock: 0,
   },
   {
     title:
@@ -1227,6 +1313,7 @@ let products = [
     resolution: " 60 مگاپیکسل",
     screen: "Super Retina XDR OLED",
     size: 6.1,
+    stock: 50,
   },
   {
     title: "گوشی موبایل اپل مدل iPhone 6s ظرفیت 64 گیگابایت",
@@ -1240,11 +1327,12 @@ let products = [
     resolution: " 10 مگاپیکسل",
     screen: "LED",
     size: 5.6,
+    stock: 50,
   },
   {
     title:
       "گوشی موبایل اپل مدل iPhone XS Max A1921 LLA تک سیم‌ کارت ظرفیت 64 گیگابایت",
-    price: 0,
+    price: 158000000,
     description: "",
     image: "/images/apple/17.webp",
     brand: "اپل",
@@ -1254,10 +1342,11 @@ let products = [
     resolution: " 20 مگاپیکسل",
     screen: "Super XDR OLED",
     size: 6.2,
+    stock: 50,
   },
   {
     title: "گوشی موبایل اپل مدل iPhone 8 ظرفیت 64 گیگابایت",
-    price: 0,
+    price: 160000000,
     description: "",
     image: "/images/apple/18.webp",
     brand: "اپل",
@@ -1267,6 +1356,7 @@ let products = [
     resolution: " 15 مگاپیکسل",
     screen: "LED",
     size: 6.1,
+    stock: 50,
   },
   {
     title:
@@ -1281,6 +1371,7 @@ let products = [
     resolution: " 150 مگاپیکسل",
     screen: "LTPO Super Retina XDR OLED",
     size: 6.6,
+    stock: 50,
   },
   {
     title:
@@ -1295,6 +1386,7 @@ let products = [
     resolution: " 50 مگاپیکسل",
     screen: "LTPO XDR OLED",
     size: 6.5,
+    stock: 50,
   },
   {
     title:
@@ -1309,6 +1401,7 @@ let products = [
     resolution: " 50 مگاپیکسل",
     screen: "Super Retina XDR OLED",
     size: 6.7,
+    stock: 50,
   },
   {
     title:
@@ -1323,6 +1416,7 @@ let products = [
     resolution: " 40 مگاپیکسل",
     screen: "XDR OLED",
     size: 6.8,
+    stock: 50,
   },
   {
     title:
@@ -1337,11 +1431,12 @@ let products = [
     resolution: " 160 مگاپیکسل",
     screen: "LTPO Super Retina XDR OLED",
     size: 6.3,
+    stock: 50,
   },
   {
     title:
       "گوشی موبایل اپل مدل iPhone 13 Pro تک سیم‌ کارت ظرفیت 128 گیگابایت و رم 6 گیگابایت - نات اکتیو ریفربیش پارت نامبر F",
-    price: 0,
+    price: 260000000,
     description: "",
     image: "/images/apple/24.webp",
     brand: "اپل",
@@ -1351,10 +1446,11 @@ let products = [
     resolution: " 70 مگاپیکسل",
     screen: "Super Retina XDR OLED",
     size: 6.2,
+    stock: 50,
   },
   {
     title: "گوشی موبایل اپل مدل iPhone X ظرفیت 256 گیگابایت",
-    price: 0,
+    price: 83000000,
     description: "",
     image: "/images/apple/25.webp",
     brand: "اپل",
@@ -1364,6 +1460,7 @@ let products = [
     resolution: " 50 مگاپیکسل",
     screen: "LTPO OLED",
     size: 6.2,
+    stock: 0,
   },
   {
     title:
@@ -1378,6 +1475,7 @@ let products = [
     resolution: " 140 مگاپیکسل",
     screen: "LTPO Super Retina XDR OLED",
     size: 6.6,
+    stock: 50,
   },
   {
     title:
@@ -1392,6 +1490,7 @@ let products = [
     resolution: " 60 مگاپیکسل",
     screen: "LTPO Retina XDR OLED",
     size: 6.5,
+    stock: 50,
   },
   {
     title:
@@ -1406,11 +1505,12 @@ let products = [
     resolution: " 100 مگاپیکسل",
     screen: "LTPO Super Retina XDR OLED",
     size: 6.8,
+    stock: 50,
   },
   {
     title:
       "گوشی موبایل اپل مدل iPhone 13 A2634 دو سیم‌ کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت - نات اکتیو",
-    price: 0,
+    price: 348000000,
     description: "",
     image: "/images/apple/29.webp",
     brand: "اپل",
@@ -1420,6 +1520,7 @@ let products = [
     resolution: " 50 مگاپیکسل",
     screen: "XDR OLED",
     size: 6.3,
+    stock: 50,
   },
   {
     title:
@@ -1434,6 +1535,7 @@ let products = [
     resolution: " 150 مگاپیکسل",
     screen: "LTPO Super Retina XDR OLED",
     size: 6.9,
+    stock: 50,
   },
   {
     title:
@@ -1448,11 +1550,12 @@ let products = [
     resolution: " 70 مگاپیکسل",
     screen: "XDR OLED",
     size: 6.2,
+    stock: 50,
   },
   {
     title:
       "گوشی موبایل اپل مدل iPhone 11 Pro Max A2220 دو سیم‌ کارت ظرفیت 64 گیگابایت",
-    price: 0,
+    price: 270000000,
     description: "",
     image: "/images/apple/32.webp",
     brand: "اپل",
@@ -1462,6 +1565,7 @@ let products = [
     resolution: " 30 مگاپیکسل",
     screen: "OLED",
     size: 6.3,
+    stock: 50,
   },
   {
     title:
@@ -1476,11 +1580,12 @@ let products = [
     resolution: " 50 مگاپیکسل",
     screen: "Retina XDR OLED",
     size: 6.8,
+    stock: 50,
   },
   {
     title:
       "گوشی موبایل اپل مدل iPhone 11 CH دو سیم‌ کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت",
-    price: 0,
+    price: 123000000,
     description: "",
     image: "/images/apple/34.webp",
     brand: "اپل",
@@ -1490,6 +1595,7 @@ let products = [
     resolution: " 20 مگاپیکسل",
     screen: "LED",
     size: 6.5,
+    stock: 50,
   },
   {
     title:
@@ -1504,6 +1610,7 @@ let products = [
     resolution: " 50 مگاپیکسل",
     screen: "LTPO Super OLED",
     size: 6.3,
+    stock: 50,
   },
   {
     title:
@@ -1518,6 +1625,7 @@ let products = [
     resolution: " 40 مگاپیکسل",
     screen: "XDR OLED",
     size: 6.3,
+    stock: 50,
   },
   {
     title:
@@ -1532,10 +1640,11 @@ let products = [
     resolution: " 80 مگاپیکسل",
     screen: "LTPO Retina XDR OLED",
     size: 6.7,
+    stock: 50,
   },
   {
     title: "گوشی موبایل اپل مدل iPhone 8 (Product) Red ظرفیت 64 گیگابایت",
-    price: 0,
+    price: 51000000,
     description: "",
     image: "/images/apple/38.webp",
     brand: "اپل",
@@ -1545,6 +1654,7 @@ let products = [
     resolution: " 10 مگاپیکسل",
     screen: "LED",
     size: 5.5,
+    stock: 50,
   },
   {
     title:
@@ -1559,6 +1669,7 @@ let products = [
     resolution: " 50 مگاپیکسل",
     screen: "LTPO OLED",
     size: 6.5,
+    stock: 50,
   },
   {
     title:
@@ -1573,6 +1684,7 @@ let products = [
     resolution: " 40 مگاپیکسل",
     screen: "LTPO XDR OLED",
     size: 6.2,
+    stock: 50,
   },
   {
     title:
@@ -1587,6 +1699,7 @@ let products = [
     resolution: " 30 مگاپیکسل",
     screen: "Super Retina XDR OLED",
     size: 6.5,
+    stock: 50,
   },
   {
     title:
@@ -1601,6 +1714,7 @@ let products = [
     resolution: " 40 مگاپیکسل",
     screen: "XDR OLED",
     size: 6.2,
+    stock: 50,
   },
   {
     title:
@@ -1615,6 +1729,7 @@ let products = [
     resolution: " 90 مگاپیکسل",
     screen: "LTPO Super OLED",
     size: 5.9,
+    stock: 50,
   },
 ];
 

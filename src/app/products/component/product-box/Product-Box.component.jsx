@@ -387,7 +387,7 @@ export default function ProductBox({ product }) {
             )}
           </div>
 
-          {product.price == 0 ? (
+          {product.stock == 0 ? (
             <div className={styles["product-price-row"]}>
               <div className={styles["product-price"]}>
                 <div className={styles["product-non-existent"]}>ناموجود</div>

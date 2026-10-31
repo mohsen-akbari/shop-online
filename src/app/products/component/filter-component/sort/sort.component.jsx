@@ -13,19 +13,17 @@ const options = [
   { value: "expensive", label: "گران ترین" },
 ];
 
-export default async function SortComponent() {
+export default function SortComponent() {
   // const [selectedOption, setSelectedOption] = useState(options[0]);
   const { dispatchFilters } = useContext(FiltersContext);
 
-
-  //  const handleChange = (selectedOption) => {
-  //   dispatchFilters({
-  //     type: "updated_filter",
-  //     key: "sort",
-  //     value: selectedOption,
-  //   });
-  // };
-  
+  const handleChange = (selectedOption) => {
+    dispatchFilters({
+      type: "updated_filter",
+      key: "sort",
+      value: selectedOption,
+    });
+  };
 
   return (
     <SelectComponent
