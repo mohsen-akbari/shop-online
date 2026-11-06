@@ -173,7 +173,7 @@ export async function GET(request) {
 
       const brand = searchParams.get("brand");
       const sort = searchParams.get("sort");
-      const inventory = searchParams.get("inventory") || "همه کالا ها";
+      const inventory = searchParams.get("Inventory") || "همه کالا ها";
       const pageParam = parseInt(searchParams.get("page") || "1", 10);
 
       const page = Math.max(pageParam, 1);
