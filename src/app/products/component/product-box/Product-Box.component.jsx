@@ -358,6 +358,7 @@ export default function ProductBox({ product }) {
                 type="button"
                 className={styles["add-to-cart"]}
                 onClick={() => addToCart(product)}
+                disabled={product.stock === 0 ? true : false}
               >
                 <BiCartPlus width="1.5rem" height="1.5rem" />
                 افزودن به سبد خرید
@@ -403,6 +404,6 @@ export default function ProductBox({ product }) {
           )}
         </div>
       </div>
-    </div> 
+    </div>
   );
 }
