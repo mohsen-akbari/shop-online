@@ -10,6 +10,16 @@
     grid-area: header;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    .dotted {
+      margin-left: 0.5rem;
+      font-size: 1.5rem;
+    }
+
+    .total-product {
+      margin-left: 0.5rem;
+    }
   }
 
   .side-filter {

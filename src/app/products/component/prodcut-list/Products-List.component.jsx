@@ -617,6 +617,8 @@ import {
   useState,
 } from "react";
 
+import { enTofaNum } from "@/utils/Utilities";
+
 import { FiltersContext } from "../../providers/filters/filters.provider";
 import InventoryFilterComponent from "../filter-component/Inventory-filter/Inventory-filter.component";
 import FilteringProductsComponent from "../filtering-box/filtering-products.component";
@@ -777,6 +779,11 @@ export default function ProductList() {
     <div className={styles["container-filter"]}>
       <div className={styles["header-filter"]}>
         <SortingProductsComponent />
+        {loading && page === 1 ? (
+          <p className={styles.dotted}>...</p>
+        ) : (
+          <p className={styles["total-product"]}>{enTofaNum(pagination.total)} کالا</p>
+        )}
       </div>
 
       <div className={styles["side-filter"]}>
