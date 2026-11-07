@@ -10,5 +10,11 @@
   label {
     display: flex;
     gap: 0.5rem;
+    cursor: pointer;
+    margin-top: 0.2rem;
+
+    input {
+      cursor: pointer;
+    }
   }
 }
