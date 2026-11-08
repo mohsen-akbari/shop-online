@@ -782,7 +782,9 @@ export default function ProductList() {
         {loading && page === 1 ? (
           <p className={styles.dotted}>...</p>
         ) : (
-          <p className={styles["total-product"]}>{enTofaNum(pagination.total)} کالا</p>
+          <p className={styles["total-product"]}>
+            {enTofaNum(pagination.total)} کالا
+          </p>
         )}
       </div>
 
