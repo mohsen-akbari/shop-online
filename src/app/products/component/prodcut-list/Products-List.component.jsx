@@ -644,6 +644,8 @@ export default function ProductList() {
   const [loading, setLoading] = useState(false);
   const [isError, setIsError] = useState(null);
 
+  console.log(isError);
+
   // ساخت query پایدار از فیلترها
   const query = useMemo(() => {
     const params = new URLSearchParams();
@@ -804,15 +806,18 @@ export default function ProductList() {
           </div>
         ) : (
           <>
-            {visibleProducts.length > 0 ? (
-              <div className={styles["products-grid"]}>
-                {visibleProducts.map((product) => (
-                  <ProductBox key={product.id} product={product} />
-                ))}
-              </div>
-            ) : (
-              !isError && <div className={styles.empty}>محصولی پیدا نشد</div>
-            )}
+            {
+              visibleProducts.length > 0 && (
+                <div className={styles["products-grid"]}>
+                  {visibleProducts.map((product) => (
+                    <ProductBox key={product.id} product={product} />
+                  ))}
+                </div>
+              )
+              //  : (
+              //   isError && <div className={styles.empty}>محصولی پیدا نشد</div>
+              // )
+            }
 
             {pagination.totalPages > 1 && (
               <div className={styles.pagination}>

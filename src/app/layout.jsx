@@ -1,6 +1,7 @@
 "use client";
 
 import { Vazirmatn } from "next/font/google";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 import FooterComponent from "@/components/footer/footer.component";
@@ -11,6 +12,8 @@ import ToasterComponent from "@/components/toaster/toaster.component";
 import { CartProvider } from "@/contexts/CartContext";
 
 import "@/styles/typography.css";
+
+import bannerTop from "../../public/images/banner-top/banner-top.gif";
 
 import "./globals.css";
 import styles from "./layout.module.css";
@@ -33,6 +36,9 @@ export default function RootLayout({ children }) {
     <html lang="fa" dir="rtl" className={vazirmatn.className}>
       <body>
         <ScrollTopComponent />
+        <a href="#" className={styles.link}>
+          <Image src={bannerTop} alt="banner" width={1431} height={60} />
+        </a>
         {!isPublicRoute ? (
           <CartProvider>
             <HeaderComponent />

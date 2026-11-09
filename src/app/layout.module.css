@@ -6,11 +6,11 @@
   /* grid-template-columns: auto 1fr; */
   grid-template-rows: 1fr;
   /* gap: 2rem; */
-  
+
   /* min-block-size: 100%; */
-  
+
   padding-block: 1rem 3rem;
-  
+
   place-items: center;
   margin-inline: auto;
   min-block-size: 25rem;
@@ -18,5 +18,4 @@
   .content {
     inline-size: 100%;
   }
-
 }
