@@ -166,246 +166,6 @@
 // import InventoryFilterComponent from "../filter-component/Inventory-filter/Inventory-filter.component";
 // import FilteringProductsComponent from "../filtering-box/filtering-products.component";
 // import ProductBox from "../product-box/Product-Box.component";
-// import SortingProductsComponent from "../sorting-box/sorting-products.component";
-
-// import styles from "./product-List.module.css";
-
-// export default function ProductList() {
-//   const { products } = useContext(ProductsContext);
-//   const { filters } = useContext(FiltersContext);
-
-//   const [visibleProducts, setVisibleProducts] = useState([]);
-//   const [page, setPage] = useState(1);
-
-//   const [loading, setLoading] = useState(false);
-//   const [isError, setIsError] = useState(null);
-
-//   const [hasNextPage, setHasNextPage] = useState(true);
-
-//   // --------------------------------------------------
-//   // ساخت query string
-//   // --------------------------------------------------
-
-//   function getValues(obj) {
-//     const list = [];
-
-//     for (const [key, value] of Object.entries(obj)) {
-//       if (typeof value === "object" && value !== null) {
-//         list.push(`${key}=${encodeURIComponent(value.value)}`);
-//       } else {
-//         list.push(`${key}=${encodeURIComponent(value)}`);
-//       }
-//     }
-
-//     return list;
-//   }
-
-//   // --------------------------------------------------
-//   // دریافت محصولات
-//   // --------------------------------------------------
-
-//   const getData = useCallback(async () => {
-//     setLoading(true);
-//     setIsError(null);
-
-//     try {
-//       let query = "";
-
-//       if (Object.keys(filters).length > 0) {
-//         query = getValues(filters).join("&");
-//       } else {
-//         query = "sort=بهترین";
-//       }
-
-//       const url =
-//         `http://localhost:3000/api/products?` + `${query}&page=${page}`;
-
-//       const response = await fetch(url);
-
-//       if (!response.ok) {
-//         throw new Error("ارتباط با سرور دچار مشکل شده است");
-//       }
-
-//       const result = await response.json();
-
-//       // ----------------------------------------------
-//       // اگر صفحه خالی بود
-//       // ----------------------------------------------
-
-//       if (!Array.isArray(result) || result.length === 0) {
-//         setVisibleProducts([]);
-//         setHasNextPage(false);
-//         return;
-//       }
-
-//       // ----------------------------------------------
-//       // محصولات همین صفحه
-//       // ----------------------------------------------
-
-//       setVisibleProducts(result);
-
-//       // اگر API تعداد محصولات صفحه را کمتر از limit
-//       // برگرداند، یعنی صفحه بعدی نداریم.
-//       //
-//       // مثلاً اگر API در هر صفحه 12 محصول بدهد:
-//       //
-//       // result.length === 12 -> احتمالاً صفحه بعد هست
-//       // result.length < 12   -> صفحه آخر
-//       //
-//       // عدد 12 را متناسب با API خودت تغییر بده.
-//       setHasNextPage(result.length >= 12);
-//     } catch (error) {
-//       console.error(error);
-
-//       setIsError("دریافت محصولات با مشکل مواجه شد");
-
-//       setVisibleProducts([]);
-//       setHasNextPage(false);
-//     } finally {
-//       setLoading(false);
-//     }
-//   }, [filters, page]);
-
-//   // --------------------------------------------------
-//   // هر بار page یا filter تغییر کرد
-//   // فقط لیست محصولات fetch می‌شود
-//   // --------------------------------------------------
-
-//   useEffect(() => {
-//     getData();
-//   }, [getData]);
-
-//   // --------------------------------------------------
-//   // تغییر فیلتر
-//   // --------------------------------------------------
-
-//   useEffect(() => {
-//     setPage(1);
-//   }, [filters]);
-
-//   // --------------------------------------------------
-//   // Pagination
-//   // --------------------------------------------------
-
-//   const handlePageChange = (newPage) => {
-//     if (loading) return;
-
-//     if (newPage < 1) return;
-
-//     if (!hasNextPage && newPage > page) return;
-
-//     setPage(newPage);
-
-//     // برگشت به ابتدای لیست
-//     window.scrollTo({
-//       top: 0,
-//       behavior: "smooth",
-//     });
-//   };
-
-//   return (
-//     <div className={styles["container-filter"]}>
-//       {/* -------------------------------------------
-//           Header / Sorting
-//       -------------------------------------------- */}
-
-//       {products?.length > 0 && (
-//         <div className={styles["header-filter"]}>
-//           <SortingProductsComponent />
-//         </div>
-//       )}
-
-//       {/* -------------------------------------------
-//           Filters
-//       -------------------------------------------- */}
-
-//       {products?.length > 0 && (
-//         <div className={styles["side-filter"]}>
-//           <FilteringProductsComponent />
-
-//           <InventoryFilterComponent />
-//         </div>
-//       )}
-
-//       {/* -------------------------------------------
-//           Products
-//       -------------------------------------------- */}
-
-//       <div className={styles["body-filter"]}>
-//         {/* Loading */}
-//         {loading ? (
-//           <div className={styles.loading}>
-//             <ColorRing
-//               visible={true}
-//               height="70"
-//               width="70"
-//               ariaLabel="color-ring-loading"
-//               wrapperClass="color-ring-wrapper"
-//               colors={["#3167f1", "#3167f1", "#3167f1", "#3167f1", "#3167f1"]}
-//             />
-//           </div>
-//         ) : visibleProducts.length > 0 ? (
-//           <>
-//             {/* Products */}
-//             <div className={styles["products-grid"]}>
-//               {visibleProducts.map((product) => (
-//                 <ProductBox product={product} key={product.id} />
-//               ))}
-//             </div>
-
-//             {/* ---------------------------------------
-//                 Pagination
-//             ---------------------------------------- */}
-
-//             <div className={styles.pagination}>
-//               {/* Previous */}
-//               <button
-//                 type="button"
-//                 disabled={page === 1 || loading}
-//                 onClick={() => handlePageChange(page - 1)}
-//                 className={page === 1 ? styles.disabled : ""}
-//               >
-//                 قبلی
-//               </button>
-
-//               {/* Current page */}
-//               <button type="button" className={styles.activePage}>
-//                 {page}
-//               </button>
-
-//               {/* Next */}
-//               <button
-//                 type="button"
-//                 disabled={!hasNextPage || loading}
-//                 onClick={() => handlePageChange(page + 1)}
-//                 className={!hasNextPage ? styles.disabled : ""}
-//               >
-//                 بعدی
-//               </button>
-//             </div>
-//           </>
-//         ) : (
-//           !loading && <div className={styles.empty}>محصولی پیدا نشد</div>
-//         )}
-
-//         {/* Error */}
-//         {isError && <div className={styles.error}>{isError}</div>}
-//       </div>
-//     </div>
-//   );
-// }
-
-// "use client";
-
-// import { useCallback, useContext, useEffect, useState } from "react";
-
-// import { ColorRing } from "react-loader-spinner";
-
-// import { FiltersContext } from "../../providers/filters/filters.provider";
-// import { ProductsContext } from "../../providers/products/products.provider";
-// import InventoryFilterComponent from "../filter-component/Inventory-filter/Inventory-filter.component";
-// import FilteringProductsComponent from "../filtering-box/filtering-products.component";
-// import ProductBox from "../product-box/Product-Box.component";
 // import SkeletonBoxComponent from "../skeleton/skeleton-box.component";
 // import SortingProductsComponent from "../sorting-box/sorting-products.component";
 
@@ -644,8 +404,6 @@ export default function ProductList() {
   const [loading, setLoading] = useState(false);
   const [isError, setIsError] = useState(null);
 
-  console.log(isError);
-
   // ساخت query پایدار از فیلترها
   const query = useMemo(() => {
     const params = new URLSearchParams();
@@ -672,44 +430,121 @@ export default function ProductList() {
   // محافظت در برابر پاسخ‌های قدیمی
   const requestId = useRef(0);
 
+  // const getData = useCallback(
+  //   async (signal, currentRequestId) => {
+  //     setLoading(true);
+  //     setIsError(null);
+
+  //     try {
+  //       // const url = `http://localhost:3000/api/products?${query}&page=${page}`;
+  //       const url = `/api/products?${query}&page=${page}`;
+  //       // const response = await fetch(url, { signal });
+  //       const response = await fetch(url, {
+  //         signal,
+  //         cache: "no-store",
+  //       });
+
+  //       if (!response.ok) {
+  //         throw new Error("دریافت محصولات ناموفق بود");
+  //       }
+
+  //       const result = await response.json();
+
+  //       // فقط آخرین درخواست اجازه تغییر state دارد
+  //       if (signal.aborted || currentRequestId !== requestId.current) {
+  //         return;
+  //       }
+
+  //       if (!Array.isArray(result.products) || !result.pagination) {
+  //         throw new Error("ساختار پاسخ سرور معتبر نیست");
+  //       }
+
+  //       setVisibleProducts(result.products);
+  //       setPagination(result.pagination);
+  //     } catch (error) {
+  //       if (
+  //         error.name === "AbortError" ||
+  //         signal.aborted ||
+  //         currentRequestId !== requestId.current
+  //       ) {
+  //         return;
+  //       }
+
+  //       console.error("Products API Error:", error);
+
+  //       setIsError("دریافت محصولات با مشکل مواجه شد");
+  //       setVisibleProducts([]);
+  //     } finally {
+  //       // درخواست قدیمی نباید Loading درخواست جدید را تغییر دهد
+  //       if (!signal.aborted && currentRequestId === requestId.current) {
+  //         setLoading(false);
+  //       }
+  //     }
+  //   },
+  //   [query, page],
+  // );
+
   const getData = useCallback(
     async (signal, currentRequestId) => {
       setLoading(true);
       setIsError(null);
 
       try {
-        // const url = `http://localhost:3000/api/products?${query}&page=${page}`;
         const url = `/api/products?${query}&page=${page}`;
-        const response = await fetch(url, { signal });
+
+        const response = await fetch(url, {
+          signal,
+          cache: "no-store",
+        });
 
         if (!response.ok) {
-          throw new Error("دریافت محصولات ناموفق بود");
+          throw new Error(`API Error: ${response.status}`);
         }
 
         const result = await response.json();
 
-        // فقط آخرین درخواست اجازه تغییر state دارد
         if (signal.aborted || currentRequestId !== requestId.current) {
           return;
         }
 
         if (!Array.isArray(result.products) || !result.pagination) {
-          throw new Error("ساختار پاسخ سرور معتبر نیست");
+          throw new Error("Invalid API response structure");
         }
 
         setVisibleProducts(result.products);
         setPagination(result.pagination);
       } catch (error) {
+        // catch (error) {
+        //   if (
+        //     error.name === "AbortError" ||
+        //     signal.aborted ||
+        //     currentRequestId !== requestId.current
+        //   ) {
+        //     return;
+        //   }
+
+        //   console.error("Products Fetch Error:", error);
+
+        //   setIsError("دریافت محصولات با مشکل مواجه شد");
+        //   setVisibleProducts([]);
+        // }
+
+        // }
+        // درخواست لغوشده نباید خطا محسوب شود
         if (
-          error.name !== "AbortError" &&
-          currentRequestId === requestId.current
+          error.name === "AbortError" ||
+          signal.aborted ||
+          currentRequestId !== requestId.current
         ) {
-          console.error(error);
-          setIsError("دریافت محصولات با مشکل مواجه شد");
-          setVisibleProducts([]);
+          return;
         }
+
+        console.log("salam");
+        console.error("Products Fetch Error:", error);
+
+        setIsError("دریافت محصولات با مشکل مواجه شد");
+        setVisibleProducts([]);
       } finally {
-        // درخواست قدیمی نباید Loading درخواست جدید را تغییر دهد
         if (!signal.aborted && currentRequestId === requestId.current) {
           setLoading(false);
         }
@@ -717,16 +552,35 @@ export default function ProductList() {
     },
     [query, page],
   );
+  // useEffect(() => {
+  //   // اگر فیلتر عوض شده و صفحه فعلی ۱ نیست،
+  //   // ابتدا صفحه را اصلاح کن و درخواست نفرست.
+  //   if (previousQuery.current !== query) {
+  //     previousQuery.current = query;
+
+  //     if (page !== 1) {
+  //       setPage(1);
+  //       setLoading(false);
+  //       return;
+  //     }
+  //   }
+
+  //   const controller = new AbortController();
+  //   const currentRequestId = ++requestId.current;
+
+  //   getData(controller.signal, currentRequestId);
+
+  //   return () => {
+  //     controller.abort();
+  //   };
+  // }, [query, page, getData]);
 
   useEffect(() => {
-    // اگر فیلتر عوض شده و صفحه فعلی ۱ نیست،
-    // ابتدا صفحه را اصلاح کن و درخواست نفرست.
     if (previousQuery.current !== query) {
       previousQuery.current = query;
 
       if (page !== 1) {
         setPage(1);
-        setLoading(false);
         return;
       }
     }

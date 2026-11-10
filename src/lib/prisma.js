@@ -4,14 +4,24 @@
 // const prisma = globalForPrisma.prisma ?? prismaClientSingleton();
 // if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;
 // export default prisma;
+// import { PrismaClient } from "@prisma/client";
+// const prisma = new PrismaClient();
+// const globalForPrisma = globalThis;
+// // const prisma = globalForPrisma.prisma ?? prismaClientSingleton();
+// if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;
+// export default prisma;
 import { PrismaClient } from "@prisma/client";
-
-const prisma = new PrismaClient();
 
 const globalForPrisma = globalThis;
 
-// const prisma = globalForPrisma.prisma ?? prismaClientSingleton();
+const prisma =
+  globalForPrisma.prisma ??
+  new PrismaClient({
+    log: ["error", "warn"],
+  });
 
-if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;
+if (process.env.NODE_ENV !== "production") {
+  globalForPrisma.prisma = prisma;
+}
 
 export default prisma;
