@@ -2,7 +2,6 @@
 
 import { useContext, useState } from "react";
 
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 
@@ -10,11 +9,8 @@ import clsx from "clsx";
 
 import SignOutButtonComponent from "@/app/dashboard/component/sign-out-button/sign-out-button.component";
 
-import logo from "@/assets/logo/lavinSvg.svg";
-
 import { CartContext } from "@/contexts/CartContext";
 
-import MingcuteDelete2Line from "@/icons/MingcuteDelete2Line";
 import MingcuteExitLine from "@/icons/MingcuteExitLine";
 import MingcuteHome3Line from "@/icons/MingcuteHome3Line";
 import MingcuteListCheck2Line from "@/icons/MingcuteListCheck2Line";
@@ -77,7 +73,6 @@ export default function HeaderComponent() {
         <div className={styles["header-container"]}>
           <nav>
             <div className={styles.img}>
-              {/* <Image src={logo} width={100} height={70} alt="" /> */}
               <b>◆</b>
               <span>لاوین</span>
             </div>
@@ -125,11 +120,6 @@ export default function HeaderComponent() {
                 <div className={styles.counter}>{cart.length}</div>
               )}
             </ButtonLinkComponent>
-            {/* <ButtonComponent variant="primary">
-            {" "}
-            <MingcuteExitLine color="var(--color-danger)" />
-            خروج
-          </ButtonComponent> */}
             <SignOutButtonComponent openSingOutModal={openSingOutModal} />
           </div>
         </div>

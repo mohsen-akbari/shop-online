@@ -3,9 +3,7 @@
   grid-template-areas:  "visuals visuals" "writings writings";
   place-content: center;
   gap: 1rem;
-
   min-block-size: 100%;
-  /* block-size: 100vh; */
   inline-size: 100%;
 
   .writings {
@@ -21,7 +19,6 @@
 
     h1 {
       margin-block-end: 1rem;
-
       font-size: var(--fz-600);
     }
 

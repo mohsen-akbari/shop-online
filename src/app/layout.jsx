@@ -23,11 +23,6 @@ const vazirmatn = Vazirmatn({
   display: "swap",
 });
 
-// export const metadata = {
-//   title: "لاوین",
-//   description: "فروشگاه گوشی  همراه لاوین",
-// };
-
 export default function RootLayout({ children }) {
   const pathName = usePathname();
   const isPublicRoute = ["/auth/sign-in", "/auth/sign-up"].includes(pathName);

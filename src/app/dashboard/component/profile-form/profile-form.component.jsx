@@ -4,8 +4,6 @@ import React, { useEffect, useState } from "react";
 
 import { ColorRing } from "react-loader-spinner";
 
-// import { toast } from "react-toastify";
-
 import { ButtonComponent } from "@/components/button/button.component";
 import CardComponent from "@/components/card/card.component";
 import NormalInputComponent from "@/components/normal-input/normal-input.component";
@@ -19,7 +17,7 @@ import MingcuteUser3Line from "@/icons/MingcuteUser3Line";
 import TablerJewishStarFilled from "@/icons/TablerJewishStarFilled";
 
 import { enTofa } from "@/utils/Utilities";
-import { fetchWithoutToast, fetchWithToast } from "@/utils/fetch-utils";
+import { fetchWithToast, fetchWithoutToast } from "@/utils/fetch-utils";
 
 import ProfileFormSkeletonComponent from "../skeleton/profile-form-skeleton.component";
 

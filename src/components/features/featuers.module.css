@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: repeat(4, auto);
   gap: 0.75rem;
-  /* margin-block-start: 1rem; */
 
   .card {
     display: flex;
@@ -11,11 +10,9 @@
     justify-content: center;
     gap: 1rem;
     padding: 1rem;
-    /* border: 1px solid var(--color-border); */
     box-shadow: var(--shadow-300);
     border-radius: var(--border-radius);
     background-color: var(--color-white);
-
     box-shadow: 0 8px 25px #1f29370a;
     border: 1px solid #e8e8f0;
 

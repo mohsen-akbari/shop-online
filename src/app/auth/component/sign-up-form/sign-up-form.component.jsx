@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
+import Loading from "@/app/loading";
 import { ColorRing } from "react-loader-spinner";
 
 import signUpImage from "@/assets/image/1.jpg";
@@ -16,7 +17,6 @@ import NormalInputComponent from "@/components/normal-input/normal-input.compone
 import PasswordInputComponent from "@/components/password-input/password-input.component";
 
 import FluentErrorCircle12Filled from "@/icons/FluentErrorCircle12Filled";
-import MaterialSymbolsLogin from "@/icons/MaterialSymbolsLogin";
 import MingcuteIncognitoModeLine from "@/icons/MingcuteIncognitoModeLine";
 import MingcuteMailLine from "@/icons/MingcuteMailLine";
 import MingcuteUser3Line from "@/icons/MingcuteUser3Line";
@@ -27,7 +27,6 @@ import { enTofa } from "@/utils/Utilities";
 import { fetchWithToast } from "@/utils/fetch-utils";
 
 import styles from "@/app/auth/styles/auth-form.module.css";
-import Loading from "@/app/loading";
 
 export default function SignUpFormComponent() {
   const [values, setValues] = useState({
@@ -186,7 +185,7 @@ export default function SignUpFormComponent() {
     }
   };
 
-  return (!submit ?(
+  return !submit ? (
     <div className={styles["auth-form"]}>
       <CardComponent>
         <div className={styles["card-content"]}>
@@ -346,5 +345,7 @@ export default function SignUpFormComponent() {
         </div>
       </CardComponent>
     </div>
-  ): <Loading />)
+  ) : (
+    <Loading />
+  );
 }

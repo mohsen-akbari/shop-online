@@ -127,7 +127,7 @@ export default function ProductsProvider({ children }) {
         }
 
         const result = await response.json();
-        setProducts(result);
+        setProducts(result.products);
       } catch (err) {
         if (err.name !== "AbortError") {
           setError(err.message || "خطایی رخ داده است");

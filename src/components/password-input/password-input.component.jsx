@@ -1,12 +1,6 @@
 "use client";
 
-import {
-  ComponentProps,
-  ForwardedRef,
-  ReactElement,
-  forwardRef,
-  useState,
-} from "react";
+import { forwardRef, useState } from "react";
 
 import NormalInputComponent from "@/components/normal-input/normal-input.component";
 

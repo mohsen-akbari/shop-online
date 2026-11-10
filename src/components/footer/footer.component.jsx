@@ -1,13 +1,8 @@
-import { ReactElement } from "react";
-
 import Image from "next/image";
 import Link from "next/link";
 
 import enamd from "@/assets/logo/Enamad-Logo-1030x1030.webp";
 import c4 from "@/assets/logo/c4.webp";
-import certificateLogo from "@/assets/logo/certificate.svg";
-import enamadLogo from "@/assets/logo/enamad.svg";
-import idkLogo from "@/assets/logo/idk.svg";
 import samandehi from "@/assets/logo/samandehi.webp";
 
 import MingcuteLinkedinFill from "@/icons/MingcuteLinkedinFill";

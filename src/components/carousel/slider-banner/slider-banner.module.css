@@ -57,15 +57,8 @@
   box-shadow: var(--shadow-400);
 }
 
-/* .custom-navigation button:hover {
-  /* background: #222;
-  color: white; */
-/* transform: translateY(-2px); */
-/* } */
-
 .custom-navigation button:active {
   transform: scale(0.92);
-  /* transform: translateY(2px); */
 }
 
 .swiper :global(.swiper-pagination-bullet) {

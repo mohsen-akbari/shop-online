@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -17,7 +17,6 @@ import IconParkOutlineProtect from "@/icons/IconParkOutlineProtect";
 import MaterialSymbolsArrowBackIosRounded from "@/icons/MaterialSymbolsArrowBackIosRounded";
 import MaterialSymbolsStarRounded from "@/icons/MaterialSymbolsStarRounded";
 import MingcuteDelete2Line from "@/icons/MingcuteDelete2Line";
-import MingcuteShoppingCart2Line from "@/icons/MingcuteShoppingCart2Line";
 import SolarSettingsOutline from "@/icons/SolarSettingsOutline";
 import SolarShopLinear from "@/icons/SolarShopLinear";
 
@@ -26,8 +25,7 @@ import { enTofa } from "@/utils/Utilities";
 import styles from "./product-detail.module.css";
 
 export default function ProductDetailComponent({ product, id }) {
-  let { cart, addToCart, removeFromCart } =
-    useContext(CartContext);
+  let { cart, addToCart, removeFromCart } = useContext(CartContext);
 
   const handleHasProduct = () => {
     const findProduct = cart?.find((item) => item.id === id);
@@ -36,7 +34,7 @@ export default function ProductDetailComponent({ product, id }) {
     }
     return true;
   };
-  
+
   return (
     <div className={styles["product-detail"]}>
       <div className={styles["product-detail-content"]}>
@@ -115,12 +113,7 @@ export default function ProductDetailComponent({ product, id }) {
             </div>
 
             {handleHasProduct() ? (
-              <ButtonComponent
-                // variant="primary"
-                // className={styles["product-button"]}
-                onClick={() => addToCart(product)}
-              >
-                {/* <MingcuteShoppingCart2Line /> */}
+              <ButtonComponent onClick={() => addToCart(product)}>
                 <BiCartPlus width="1.3rem" height="1.3rem" />
                 افزودن به سبد خرید
               </ButtonComponent>
