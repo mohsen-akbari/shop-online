@@ -25,7 +25,7 @@ import TablerJewishStarFilled from "@/icons/TablerJewishStarFilled";
 import { enTofa } from "@/utils/convert.utils";
 import { fetchWithToast } from "@/utils/fetch-utils";
 
-import styles from "@/app/auth/styles/auth-form.module.css";
+import styles from "@/features/auth/components/styles/auth-form.module.css";
 
 export default function SignUpFormComponent() {
   const [values, setValues] = useState({
