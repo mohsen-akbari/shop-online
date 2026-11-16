@@ -1,0 +1,26 @@
+"use client";
+
+import { forwardRef, useState } from "react";
+
+import NormalInputComponent from "@/components/ui/normal-input/normal-input.component";
+
+import MingcuteEye2Line from "@/icons/MingcuteEye2Line";
+import MingcuteEyeCloseLine from "@/icons/MingcuteEyeCloseLine";
+import MingcuteKey2Line from "@/icons/MingcuteKey2Line";
+
+function PasswordInputComponent({ ...otherProps }, ref) {
+  const [isVisible, setIsVisible] = useState(false);
+
+  return (
+    <NormalInputComponent
+      ref={ref}
+      type={isVisible ? "text" : "password"}
+      prefixIcon={<MingcuteKey2Line />}
+      suffixIcon={isVisible ? <MingcuteEyeCloseLine /> : <MingcuteEye2Line />}
+      onSuffixClick={() => setIsVisible((old) => !old)}
+      {...otherProps}
+    />
+  );
+}
+
+export default forwardRef(PasswordInputComponent);

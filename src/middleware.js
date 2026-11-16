@@ -5,8 +5,6 @@ import { extractUserId } from "@/utils/api.utils";
 export async function middleware(request) {
   const { pathname } = request.nextUrl;
 
-  // const token = request.cookies.get("token")?.value;
-
   const isPublicPage =
     pathname === "/auth/sign-in" || pathname === "/auth/sign-up";
 
@@ -27,15 +25,4 @@ export async function middleware(request) {
 
 export const config = {
   matcher: ["/((?!api|_next/static|_next/image|favicon.ico|.*\\..*).*)"],
-  //  matcher: [
-  //     "/",
-  //     "/dashboard/:path*",
-  //     "/products/:path*",
-  //     "/cart/:path*",
-  //     "/checkout/:path*",
-  //     "/orders/:path*",
-  //     "/auth/sign-in",
-  //     "/auth-sign-up",
-  //   ],
 };
-

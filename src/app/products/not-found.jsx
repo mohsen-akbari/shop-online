@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import notFoundImage from "@/assets/illustrations/not-found.svg";
+import notFoundImage from "@/../public/images/illustrations/not-found.svg";
 
 import LetsIconsBack from "@/icons/LetsIconsBack";
 

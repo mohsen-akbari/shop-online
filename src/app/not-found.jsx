@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-import notFoundImage from "@/assets/illustrations/not-found.svg";
+import notFoundImage from "@/../public/images/illustrations/not-found.svg";
 
 import styles from "./not-found.module.css";
 
-export default function NotFound  () {
+export default function NotFound() {
   return (
     <div className={styles["not-found"]}>
       <div className={styles.writings}>

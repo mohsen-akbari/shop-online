@@ -1,11 +1,11 @@
 "use client";
 
-import { useContext, useState } from "react";
+import { useContext } from "react";
 
-import { CartContext } from "@/contexts/CartContext";
+import { CartContext } from "@/features/cart/context/CartContext";
 
-import CartEmptyComponent from "./component/cart-empty.component";
-import CartShopComponent from "./component/cart-shop.component";
+import CartEmptyComponent from "../../features/cart/component/cart-empty/cart-empty.component";
+import CartShopComponent from "../../features/cart/component/cart-shop/cart-shop.component";
 
 import styles from "./page.module.css";
 

@@ -4,19 +4,17 @@ import { Vazirmatn } from "next/font/google";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
-import FooterComponent from "@/components/footer/footer.component";
-import HeaderComponent from "@/components/header/header.component";
-import ScrollTopComponent from "@/components/scroll-top/scroll-top.component";
-import ToasterComponent from "@/components/toaster/toaster.component";
+import bannerTop from "@/../public/images/banner/banner-top.gif";
+import { CartProvider } from "@/features/cart/providers/CartProviders";
 
-import { CartProvider } from "@/contexts/CartContext";
-
-import "@/styles/typography.css";
-
-import bannerTop from "../../public/images/banner-top/banner-top.gif";
+import FooterComponent from "@/components/layout/footer/footer.component";
+import HeaderComponent from "@/components/layout/header/header.component";
+import ScrollTopComponent from "@/components/shared/scroll-top/scroll-top.component";
+import ToasterComponent from "@/components/ui/toaster/toaster.component";
 
 import "./globals.css";
 import styles from "./layout.module.css";
+import "@/app/styles/typography.css";
 
 const vazirmatn = Vazirmatn({
   subsets: ["latin", "arabic"],

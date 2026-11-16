@@ -1,6 +1,6 @@
 import React from "react";
 
-import SignUpFormComponent from "../component/sign-up-form/sign-up-form.component";
+import SignUpFormComponent from "../../../features/auth/components/sign-up-form/sign-up-form.component";
 
 import styles from "./page.module.css";
 

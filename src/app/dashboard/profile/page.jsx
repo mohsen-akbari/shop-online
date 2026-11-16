@@ -1,4 +1,4 @@
-import ProfileFormComponent from "../component/profile-form/profile-form.component";
+import ProfileFormComponent from "@/features/profile/component/profile-form/profile-form.component";
 
 import styles from "./page.module.css";
 

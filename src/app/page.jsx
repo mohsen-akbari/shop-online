@@ -1,20 +1,12 @@
-import { Suspense } from "react";
+import img4 from "@/../public/images/banner/banner-1.gif";
+import img3 from "@/../public/images/banner/banner-3.webp";
 
-// import img1 from "@/assets/image/banner/banner-1.webp";
-import img2 from "@/assets/image/banner/banner-2.webp";
-import img3 from "@/assets/image/banner/banner-3.webp";
-import img4 from "@/assets/image/banner/banner-1.gif";
-
-
-import BannerComponent from "@/components/banner/banner.component";
-import CarouselComponent from "@/components/carousel/carousel.component";
-import SwiperSlider from "@/components/carousel/slider/slider.component";
-import FeaturesComponent from "@/components/features/Features.component";
-import FooterComponent from "@/components/footer/footer.component";
-import HeaderComponent from "@/components/header/header.component";
+import BannerComponent from "@/components/shared/banner/banner.component";
+import CarouselComponent from "@/features/home/components/product-carousel/product-carousel.component";
+import SliderBannerComponent from "@/features/home/components/banner-slider/banner-slider.component";
+import FeaturesComponent from "@/features/home/components/store-benefits/Store-Benefits.component";
 
 import styles from "./page.module.css";
-import SliderBannerComponent from "@/components/carousel/slider-banner/slider-banner.component";
 
 export default async function Home() {
   return (

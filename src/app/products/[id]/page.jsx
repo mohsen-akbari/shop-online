@@ -1,6 +1,7 @@
 import React from "react";
 
-import ProductDetailComponent from "../component/product-detail/Product-Detail.component";
+import ProductDetailComponent from "@/features/products/components/product-detail/Product-Detail.component";
+
 import NotFoundShop from "../not-found";
 
 export default async function ProductDetail({ params }) {

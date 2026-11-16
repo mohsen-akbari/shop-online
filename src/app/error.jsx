@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-import errorImage from "@/assets/illustrations/error.jpg";
+import errorImage from "@/../public/images/illustrations/error.jpg";
 
 import styles from "./error.module.css";
 
@@ -15,7 +15,7 @@ export default function Error({ error, reset }) {
         <p>با عرض پوزش، لطفاً با تیم پشتیبانی تماس بگیرید.</p>
       </div>
       <div className={styles.visuals}>
-        <Image src={errorImage} alt="" width={350} height={300}/>
+        <Image src={errorImage} alt="" width={350} height={300} />
       </div>
       <div className={styles.actions}>
         <button onClick={reset}>تلاش مجدد</button>

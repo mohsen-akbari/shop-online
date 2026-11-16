@@ -1,4 +1,5 @@
-import LatestProducts from "./component/latest-product/Latest-Products.component";
+import LatestProducts from "@/features/products/components/latest-product/Latest-Products.component";
+
 import FiltersProvider from "./providers/filters/filters.provider";
 import ProductsProvider from "./providers/products/products.provider";
 
